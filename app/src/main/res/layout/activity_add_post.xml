@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title=" "
+        android:elevation="1dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="12dp"
+            android:onClick="cancelPost"
+            android:layout_height="wrap_content"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Tambah Data"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/txtNamaAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="NIK" />
+
+            <EditText
+                android:id="@+id/txtNikAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNamaAdd"
+                android:layout_marginTop="10dp"
+                android:hint="NIK" />
+
+            <EditText
+                android:id="@+id/txtKecAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNikAdd"
+                android:layout_marginTop="10dp"
+                android:hint="Kecamatan" />
+
+            <EditText
+                android:id="@+id/txtDesaAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtKecAdd"
+                android:layout_marginTop="10dp"
+                android:hint="Desa" />
+
+            <EditText
+                android:id="@+id/txtRWAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDesaAdd"
+                android:layout_marginTop="10dp"
+                android:hint="RW" />
+
+            <EditText
+                android:id="@+id/txtRTAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRWAdd"
+                android:layout_marginTop="10dp"
+                android:hint="RT" />
+
+            <EditText
+                android:id="@+id/txtAlamatAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRTAdd"
+                android:layout_marginTop="10dp"
+                android:hint="Alamat" />
+
+            <EditText
+                android:id="@+id/txtNohpAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAlamatAdd"
+                android:layout_marginTop="10dp"
+                android:hint="No HP" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:text="Simpan"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_shape"
+                android:textSize="17dp"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
